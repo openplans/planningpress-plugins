@@ -1,0 +1,1014 @@
+# Translation of the WordPress plugin   by .
+# Copyright (C) 2010 
+# This file is distributed under the same license as the  package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version:  \n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/media-tags\n"
+"POT-Creation-Date: 2010-12-05 17:55+0000\n"
+"PO-Revision-Date: 2010-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: media_tags.php:82
+msgctxt "taxonomy general name"
+msgid "Media-Tags"
+msgstr ""
+
+#: media_tags.php:83
+msgctxt "taxonomy singular name"
+msgid "Media-Tag"
+msgstr ""
+
+#: media_tags.php:84
+msgctxt "taxonomy search items"
+msgid "Search Media-Tags"
+msgstr ""
+
+#: media_tags.php:85
+msgctxt "taxonomy popular item"
+msgid "Popular Media-Tags"
+msgstr ""
+
+#: media_tags.php:86
+msgctxt "taxonomy all items"
+msgid "All Media-Tags"
+msgstr ""
+
+#: media_tags.php:87
+msgctxt "taxonomy parent item"
+msgid "Parent Media-Tag"
+msgstr ""
+
+#: media_tags.php:88
+msgctxt "taxonomy parent item colon"
+msgid "Parent Media-Tag:"
+msgstr ""
+
+#: media_tags.php:89
+msgctxt "taxonomy edit item"
+msgid "Edit Media-Tag"
+msgstr ""
+
+#: media_tags.php:90
+msgctxt "taxonomy update item"
+msgid "Update Media-Tag"
+msgstr ""
+
+#: media_tags.php:91
+msgctxt "taxonomy add new item"
+msgid "Add New Media-Tag"
+msgstr ""
+
+#: media_tags.php:92
+msgctxt "taxonomy new item name"
+msgid "New Media-Tag Name"
+msgstr ""
+
+#: mediatags_admin.php:147
+msgctxt "column name"
+msgid "Media-Tags"
+msgstr ""
+
+#: mediatags_admin.php:195
+msgid ""
+"<p>You must first select which Media Items to change.</p><p>Please close "
+"this dialog window and make your selection.</p>"
+msgstr ""
+
+#: mediatags_admin.php:207 mediatags_admin.php:209 mediatags_admin.php:226
+msgctxt "bulk admin label"
+msgid "Media-Tags"
+msgstr ""
+
+#: mediatags_admin.php:223
+msgctxt "bulk admin label"
+msgid "Close"
+msgstr ""
+
+#: mediatags_admin.php:224
+msgctxt "bulk admin label"
+msgid "Submit"
+msgstr ""
+
+#: mediatags_admin.php:225
+msgctxt "bulk admin label"
+msgid "Cancel"
+msgstr ""
+
+#: mediatags_admin.php:227
+msgctxt "bulk admin label"
+msgid "Show"
+msgstr ""
+
+#: mediatags_admin.php:228
+msgctxt "bulk admin label"
+msgid "Hide"
+msgstr ""
+
+#: mediatags_admin.php:229
+msgctxt "bulk admin label"
+msgid "All Media-Tags"
+msgstr ""
+
+#: mediatags_admin.php:238 mediatags_admin.php:246
+msgctxt "menu label"
+msgid "Media-Tags"
+msgstr ""
+
+#: mediatags_admin.php:239
+msgctxt "page label"
+msgid "Media-Tags"
+msgstr ""
+
+#: mediatags_admin.php:245 mediatags_admin.php:252
+msgctxt "page label"
+msgid "Media-Tags Settings"
+msgstr ""
+
+#: mediatags_admin.php:253
+msgctxt "menu label"
+msgid "Settings"
+msgstr ""
+
+#: mediatags_admin.php:259
+msgctxt "page label"
+msgid "Roles Management"
+msgstr ""
+
+#: mediatags_admin.php:260
+msgctxt "menu label"
+msgid "Roles Management"
+msgstr ""
+
+#: mediatags_admin.php:266
+msgctxt "page label"
+msgid "Third Party Settings"
+msgstr ""
+
+#: mediatags_admin.php:267
+msgctxt "menu label"
+msgid "Third Party Settings"
+msgstr ""
+
+#: mediatags_admin.php:273
+msgctxt "page label"
+msgid "Help"
+msgstr ""
+
+#: mediatags_admin.php:274
+msgctxt "menu label"
+msgid "Help"
+msgstr ""
+
+#: mediatags_admin.php:315
+msgid "All Media-Tags"
+msgstr ""
+
+#: mediatags_admin.php:393
+msgid ""
+"Enter media tags in the space above. Enter multiple tags \n"
+"\t\t\t\tseparated with comma. Or select from the tag(s) below"
+msgstr ""
+
+#: mediatags_admin.php:396
+msgid ""
+"Enter media tags in the space above. \n"
+"\t\t\tEnter multiple tags separated with comma."
+msgstr ""
+
+#: mediatags_admin.php:400
+msgid "Media-Tags:"
+msgstr ""
+
+#: mediatags_admin.php:591
+msgctxt "tab label"
+msgid "Media Tags"
+msgstr ""
+
+#: mediatags_admin.php:685
+msgctxt "column name"
+msgid "Media Tags"
+msgstr ""
+
+#: mediatags_admin.php:694
+msgctxt "column name"
+msgid "Media Used"
+msgstr ""
+
+#: mediatags_bulk_admin.php:127
+msgid "Bulk Media-Tags Management"
+msgstr ""
+
+#: mediatags_bulk_admin.php:129
+msgid ""
+"Assign or Remove Media Tags from the selected Media items. <strong>Note this "
+"action cannot be undone!</strong>"
+msgstr ""
+
+#: mediatags_bulk_admin.php:133
+msgid "Number of Media Items Selected: "
+msgstr ""
+
+#: mediatags_bulk_admin.php:137
+msgid "Assign Selected items to..."
+msgstr ""
+
+#: mediatags_bulk_admin.php:139
+msgid "Remove Selected items from..."
+msgstr ""
+
+#: mediatags_bulk_admin.php:142
+msgid "Enter new multiple Media Tags separated with comma"
+msgstr ""
+
+#: mediatags_bulk_admin.php:153
+msgid "Select from the media tag(s) below"
+msgstr ""
+
+#: mediatags_bulk_admin.php:171
+msgid "Update Media-Tags"
+msgstr ""
+
+#: mediatags_config.php:33
+msgctxt "user roles label"
+msgid "Manage Media-Tags Settings"
+msgstr ""
+
+#: mediatags_config.php:34
+msgctxt "user roles label"
+msgid "Manage Role/Cap"
+msgstr ""
+
+#: mediatags_config.php:35
+msgctxt "user roles label"
+msgid "Manage Media-Tags Terms"
+msgstr ""
+
+#: mediatags_config.php:36
+msgctxt "user roles label"
+msgid "Edit Media-Tags Terms"
+msgstr ""
+
+#: mediatags_config.php:37
+msgctxt "user roles label"
+msgid "Delete Media-Tags Terms"
+msgstr ""
+
+#: mediatags_config.php:38
+msgctxt "user roles label"
+msgid "Assign Media-Tags Terms"
+msgstr ""
+
+#: mediatags_feed.php:23
+msgid "Media-Tags RSS Feed"
+msgstr ""
+
+#: mediatags_settings.php:19
+msgid "About this Plugin"
+msgstr ""
+
+#: mediatags_settings.php:21
+msgid "Plugin Homepage"
+msgstr ""
+
+#: mediatags_settings.php:25
+msgid "Make a Donation"
+msgstr ""
+
+#: mediatags_settings.php:26
+msgid ""
+"Show your support of this plugin by making a small donation to support "
+"future development. No donation amount too small."
+msgstr ""
+
+#: mediatags_settings.php:27
+msgid "Make a donation today"
+msgstr ""
+
+#: mediatags_settings.php:33
+msgid "Need Help?"
+msgstr ""
+
+#: mediatags_settings.php:35
+msgid "Media-Tag Help"
+msgstr ""
+
+#: mediatags_settings.php:63
+#, php-format
+msgid "(<i>default is '%s'</i> )<br />"
+msgstr ""
+
+#: mediatags_settings.php:64
+msgid ""
+"<strong>Note</strong> Be careful not to use a prefix that may conflict with "
+"other WordPress standard prefixes like 'category', 'tag', a Page slug, etc."
+msgstr ""
+
+#: mediatags_settings.php:119
+msgctxt "update message"
+msgid "Media-Tags Settings have been updated."
+msgstr ""
+
+#: mediatags_settings.php:122
+msgctxt "settings panel title"
+msgid "Media-Tags Settings"
+msgstr ""
+
+#: mediatags_settings.php:156
+msgid "Media-Tags Bulk Admin Interface"
+msgstr ""
+
+#: mediatags_settings.php:160
+msgid ""
+"Turn On/Off the Media-Tags Bulk Admin Interfaces. There are two sections "
+"where some heavy JavaScript code is added to the page:"
+msgstr ""
+
+#: mediatags_settings.php:163 mediatags_settings.php:172
+#: mediatags_settings.php:226
+msgctxt "select option"
+msgid "Off"
+msgstr ""
+
+#: mediatags_settings.php:166
+msgid "On"
+msgstr ""
+
+#: mediatags_settings.php:169
+msgid "Media Library Page"
+msgstr ""
+
+#: mediatags_settings.php:176 mediatags_settings.php:224
+msgctxt "select option"
+msgid "On"
+msgstr ""
+
+#: mediatags_settings.php:178
+msgid "Media Upload Popup (Gallery & Media Library Tabs)"
+msgstr ""
+
+#: mediatags_settings.php:190
+msgid "Media-Tags Archive Template display"
+msgstr ""
+
+#: mediatags_settings.php:191
+msgid ""
+"When viewing an archive of Media-Tags like http://www.mysite.com/media-tags/"
+"some-tag-slug, the default output will be the list of attachments matching "
+"the media-tag. If the attachment is an image it will be displayed in the "
+"post item body. Using the select option below you can prevent this default "
+"action."
+msgstr ""
+
+#: mediatags_settings.php:193
+msgid ""
+"To understand the theme template files used by the Media-Tags plugin visit "
+"the help section."
+msgstr ""
+
+#: mediatags_settings.php:195 mediatags_settings.php:503
+#: mediatags_settings.php:634
+msgctxt "select option"
+msgid "No"
+msgstr ""
+
+#: mediatags_settings.php:198
+msgid "Yes"
+msgstr ""
+
+#: mediatags_settings.php:201
+msgid "Use the default Archive Template display?"
+msgstr ""
+
+#: mediatags_settings.php:211
+msgid "RSS Feed for Media-Tags"
+msgstr ""
+
+#: mediatags_settings.php:219
+msgid ""
+"The Media-Tags plugin now supports RSS feed when viewing an archive. For "
+"example when viewing the URL http://www.mysite.com/media-tags/some-tag/ you "
+"can now access the RSS listing by adding '/feed' to the end of the URL as in "
+"http://www.mysite.com/media-tags/some-tag/feed/"
+msgstr ""
+
+#: mediatags_settings.php:220
+msgid ""
+"You can customize the RSS output by adding your own Media-Tags RSS template "
+"to your theme. Check the topic under the help section."
+msgstr ""
+
+#: mediatags_settings.php:228
+msgid "Turn the Media-Tag RSS Feed option On/Off"
+msgstr ""
+
+#: mediatags_settings.php:238 mediatags_settings.php:557
+#: mediatags_settings.php:648
+msgid "Update Options"
+msgstr ""
+
+#: mediatags_settings.php:303
+msgctxt "update message"
+msgid "Media-Tags Roles have been updated."
+msgstr ""
+
+#: mediatags_settings.php:306
+msgctxt "settings panel title"
+msgid "Media-Tags Roles Management"
+msgstr ""
+
+#: mediatags_settings.php:377
+msgid "About this page"
+msgstr ""
+
+#: mediatags_settings.php:378
+msgid ""
+"This Settings panel allows control of which users can perform what functions "
+"regarding Media-Tags tags. These roles can also be administered via some "
+"other popular Role Management plugins."
+msgstr ""
+
+#: mediatags_settings.php:382
+msgid "Roles Legend"
+msgstr ""
+
+#: mediatags_settings.php:384
+msgctxt "role legend label"
+msgid "Manage Settings"
+msgstr ""
+
+#: mediatags_settings.php:385
+msgctxt "role legend text for manage settings"
+msgid ""
+"Allows the user access to the Media-Tags navigation block. <em>This option\n"
+"excludes access to the Media-Tags Roles Management panel.</em>"
+msgstr ""
+
+#: mediatags_settings.php:388
+msgctxt "role legend label"
+msgid "Manage Role/Cap"
+msgstr ""
+
+#: mediatags_settings.php:389
+msgctxt "role legend text for manage roles"
+msgid ""
+"Allows the user access to the Media-Tags Roles Management panel. (this "
+"panel) <em>This option excludes access to the other Media-Tags Settings "
+"panels.</em>"
+msgstr ""
+
+#: mediatags_settings.php:391
+msgctxt "role legend label"
+msgid "Manage Terms"
+msgstr ""
+
+#: mediatags_settings.php:392
+msgctxt "role legend text for manage terms"
+msgid ""
+"Allows users access to manage the 'Media-Tags' menu within the Media "
+"navigation block. <em>If this option is set you must also set either 'Edit "
+"Terms' or 'Delete Terms' roles.</em>"
+msgstr ""
+
+#: mediatags_settings.php:393
+msgctxt "role legend label"
+msgid "Edit Terms"
+msgstr ""
+
+#: mediatags_settings.php:394
+msgctxt "role legend text for edit terms"
+msgid ""
+"Allows the user 'Edit' ability within the Media-Tags terms management panel. "
+"<em>If you check this option you must also set the 'Manage Terms' Roles "
+"option.</em>"
+msgstr ""
+
+#: mediatags_settings.php:396
+msgctxt "role legend label"
+msgid "Delete Terms"
+msgstr ""
+
+#: mediatags_settings.php:397
+msgctxt "role legend text for delete terms"
+msgid ""
+"Allows the user 'Delete' ability within the Media-Tags terms management "
+"panel. <em>If you check this option you must also set the 'Manage Terms' "
+"Roles option.</em>"
+msgstr ""
+
+#: mediatags_settings.php:399
+msgctxt "role legend label"
+msgid "Assign Terms"
+msgstr ""
+
+#: mediatags_settings.php:400
+msgctxt "role legend text for assign terms"
+msgid ""
+"Allows the user to assign Media-Tag terms to media items. When set the user "
+"will see the 'Media-Tags' fields added to the Media item edit form where you "
+"would also see fields for the Title and Caption."
+msgstr ""
+
+#: mediatags_settings.php:418
+msgid "Role"
+msgstr ""
+
+#: mediatags_settings.php:423
+msgid "Indicats default role catabilities"
+msgstr ""
+
+#: mediatags_settings.php:427
+msgctxt "user role table header"
+msgid "ID"
+msgstr ""
+
+#: mediatags_settings.php:429
+msgctxt "user role table header"
+msgid "User (Email)"
+msgstr ""
+
+#: mediatags_settings.php:437
+msgctxt "user role table header"
+msgid "Manage Settings"
+msgstr ""
+
+#: mediatags_settings.php:446
+msgctxt "user role table header"
+msgid "Manage Role/Cap"
+msgstr ""
+
+#: mediatags_settings.php:455
+msgctxt "user role table header"
+msgid "Manage Terms"
+msgstr ""
+
+#: mediatags_settings.php:464
+msgctxt "user role table header"
+msgid "Edit Terms"
+msgstr ""
+
+#: mediatags_settings.php:473
+msgctxt "user role table header"
+msgid "Delete Terms"
+msgstr ""
+
+#: mediatags_settings.php:482
+msgctxt "user role table header"
+msgid "Assign Terms"
+msgstr ""
+
+#: mediatags_settings.php:509 mediatags_settings.php:638
+msgctxt "select option"
+msgid "Yes"
+msgstr ""
+
+#: mediatags_settings.php:547 mediatags_settings.php:564
+msgid "No users at this level."
+msgstr ""
+
+#: mediatags_settings.php:584
+msgctxt "update message"
+msgid "Media-Tags Third Party Settings have been updated."
+msgstr ""
+
+#: mediatags_settings.php:587
+msgctxt "settings panel title"
+msgid "Media-Tags Third Party Support"
+msgstr ""
+
+#: mediatags_settings.php:592
+msgid "This admin panel provides support functions for Third-Party plugins"
+msgstr ""
+
+#: mediatags_settings.php:608
+msgid "Suggest other plugins"
+msgstr ""
+
+#: mediatags_settings.php:621
+msgid "Google XML Sitemaps"
+msgstr ""
+
+#: mediatags_settings.php:626
+msgid ""
+"Include Media-Tag URLs in your Google Sitemap XML file? (Requires the "
+"install of the"
+msgstr ""
+
+#: mediatags_settings.php:628
+msgid "Google Sitemaps XML"
+msgstr ""
+
+#: mediatags_settings.php:629
+msgid "plugin"
+msgstr ""
+
+#: mediatags_settings.php:657
+msgctxt "settings panel title"
+msgid "Media-Tags Help/Support"
+msgstr ""
+
+#: mediatags_settings.php:662
+msgid ""
+"This admin panel attempts to put together some of the user question "
+"submitted on how to use \n"
+"\t\tthe Media-Tags plugin"
+msgstr ""
+
+#: mediatags_settings.php:676
+msgid "Topics"
+msgstr ""
+
+#: mediatags_settings.php:680 mediatags_settings.php:704
+msgid "Media-Tags: What does it do?"
+msgstr ""
+
+#: mediatags_settings.php:682 mediatags_settings.php:713
+msgid "I've assigned some tags to my media uploads. Now what?"
+msgstr ""
+
+#: mediatags_settings.php:684 mediatags_settings.php:729
+msgid "New Bulk Admin interfaces (New in Media-Tags 3.0)"
+msgstr ""
+
+#: mediatags_settings.php:686 mediatags_settings.php:747
+msgid "But how do I display the Media-Tag items on the front-end?"
+msgstr ""
+
+#: mediatags_settings.php:688 mediatags_settings.php:758
+msgid "Media-Tags and shortcodes"
+msgstr ""
+
+#: mediatags_settings.php:690 mediatags_settings.php:799
+msgid "Media-Tags Template Functions"
+msgstr ""
+
+#: mediatags_settings.php:692 mediatags_settings.php:822
+msgid "Media-Tags Archive Template Hierarchy"
+msgstr ""
+
+#: mediatags_settings.php:694 mediatags_settings.php:853
+msgid "Media-Tags Template Files RSS"
+msgstr ""
+
+#: mediatags_settings.php:706
+msgid ""
+"The Media-Tags plugin adds the ability to assign tags to attachments much "
+"like how you assign tags and categories to a Post. When you upload a media "
+"item (image, PDF, Excel, etc.) in WordPress you are presented with a form to "
+"update the Title, Caption, Description, etc for that item. The Media-Tags "
+"plugin adds new fields to this form where you can add new or assign existing "
+"tags to the media item. When you submit the form the Media-Tags information "
+"is stored into a custom Taxonomy as part of the database. This Taxonomy is "
+"accessible via any of the standard WordPress user functions."
+msgstr ""
+
+#: mediatags_settings.php:715
+msgid ""
+"Within the WordPress admin interface (/wp-admin) you should see a new menu "
+"option under the 'Media' navigation block labelled 'Media-Tags'. This is "
+"where you can manage your tags using a familiar interface like the one used "
+"for Post Tags. This tag management page will show the Tag name, Description, "
+"Slug and how many times the tag is used. If you click on a value in this "
+"last column you will be taken to the Media > Library page where you media "
+"items are normally listed. But the listing will be filtered to show only "
+"those items per that selected Media-Tag. Within the Media > Library page "
+"itself there is an additional column added. This column lists the Media-Tags "
+"used for the Media Library item."
+msgstr ""
+
+#: mediatags_settings.php:717
+msgid ""
+"The Media-Tags plugin also supports the new menus system used in WordPress "
+"3.0. If you go to the Appearances > Menus page you will see the Media-Tags "
+"listed in the meta boxes on the left side of the page. If you don't see the "
+"Media-Tags box try clicking the 'Screen Options' at the top-right of the "
+"page. Make sure the Media-Tags is checked."
+msgstr ""
+
+#: mediatags_settings.php:719
+msgid ""
+"On the Post/Page editor popup screens where you normally add images and "
+"other media items to your system the Media-Tags plugin is also visible. "
+"Again, when you add a media item you are presented with the standard "
+"WordPress information form to set the Title, Caption, Description, etc. Here "
+"you will also see the fields to add or assign Media-Tags to you upload. "
+"Also, within the tabbed popup you will see a tab for 'Media Tags'. This tab "
+"displays the Media-Tag terms used in your system along with the count use of "
+"that term. The count is a link. When click the count will take you to the "
+"Media Library tab filtering the displayed items to show those by the "
+"selected Media-Tag"
+msgstr ""
+
+#: mediatags_settings.php:731
+msgid ""
+"Within the WordPress admin interface (/wp-admin) a new Bulk Administration "
+"interface has been added to the Media > Library section as well as the Post/"
+"Page media popup."
+msgstr ""
+
+#: mediatags_settings.php:733
+msgid ""
+"Within the Media > Library section the Bulk Admin interface is accessed via "
+"the WordPress Bulk action dropdown. First you need to select which media "
+"items to work with. Then select 'Media-Tags' from the Bulk action dropdown "
+"and click the 'Apply' button. You will now see the new Media-Tags Bulk "
+"Administration popup. Via this popup you can assign or remove Media-Tag "
+"terms from the selected media items. You can also add new Media-Tag terms. "
+"Click the 'Submit' button to process. The page will refresh."
+msgstr ""
+
+#: mediatags_settings.php:735
+msgid ""
+"Within the Post/Page Media popup there is a similar Bulk Administration "
+"interface on the 'Galery' or  'Media Library' tabs. Look for the 'Media-"
+"Tags: show' link just above the media items listing. Instead of a new popup "
+"within a popup this will be an inline panel. On the right side of the media "
+"popup there is also a select all checkbox to select all media items. Also "
+"within each row of media items there is a checkbox to select just that item."
+msgstr ""
+
+#: mediatags_settings.php:737
+msgid ""
+"Both Bulk Administration section use some heave JavaScript to accomplish the "
+"task. If for some reason this JavaScript interferes with other plugins or "
+"borks your WordPress interface you can selectively disable these Bulk "
+"Administration options via the <a href=\"admin.php?"
+"page=mediatags_settings_panel\">Media-Tags Settings</a> panel. "
+msgstr ""
+
+#: mediatags_settings.php:749
+msgid ""
+"By default the Media-Tags plugin creates some custom rewrite rules. These "
+"rewrite rules allow you to display archives or Media-Tag terms much like the "
+"archive for post tags you may already have on your site. The Media-tags "
+"plugin adds a new URL element to your site which is 'media-tags' by default. "
+"So if your site URL is http://www.mysite.com/ then the Media-Tags archive "
+"will be something like http://www.mysite.com/media-tags/&lt;some term "
+"slug&gt;/ The &lt;some term slug&gt; part of the URL will be any given valid "
+"Media-Tags slug which contains a number of media items greater than zero."
+msgstr ""
+
+#: mediatags_settings.php:751
+msgid ""
+"You can change the '/media-tags/' part of the URL. Go to the WordPress admin "
+"section. Then into Settings > Permalinks. Toward the bottom of the page in "
+"the Optional section you will see an input field to change the '/media-"
+"tags/' URL base to something else like gallery, pictures, etc. Just remember "
+"this part of the URL must be unique. For example if you already page a "
+"WordPress Page in your system named 'Gallery' most likely the URL for that "
+"page will also be http://www.mysite.com/gallery/ This means you cannot "
+"change '/media-tags/' also to gallery since this means they would share the "
+"same URL which is not allowed."
+msgstr ""
+
+#: mediatags_settings.php:760
+msgid ""
+"The Media-Tags plugin also supports shortcodes you can add directly to you "
+"content. This would allow you to add a selection of images to you page like "
+"the WordPress gallery."
+msgstr ""
+
+#: mediatags_settings.php:762
+msgid ""
+"To use the Media-Tags shortcode you need to open or edit a Post/Page in wp-"
+"admin. In the content area you need to first make sure you are on the HTML "
+"tab and not the VISUAL tab. Once you are using the HTML tab you can enter "
+"the Media-Tags shortcode directly into the content area."
+msgstr ""
+
+#: mediatags_settings.php:764
+msgid ""
+"In it's simplest form the shortcode for Media-Tags looks something like this:"
+msgstr ""
+
+#: mediatags_settings.php:766
+msgid "<blockquote>[media-tags media_tags=\"flags\"]</blockquote>"
+msgstr ""
+
+#: mediatags_settings.php:768
+msgid ""
+"The beginning part of the shortcode <strong><em>[media-tags</em></strong> is "
+"required and indicates to WordPress which shortcode functionality to "
+"implement. The next part <strong><em>media_tags=\"flags\"</em></strong> is "
+"also required. This element tells the system which Media-Tag terms to "
+"display. You can use multiple terms here. These terms need to be comma "
+"separated."
+msgstr ""
+
+#: mediatags_settings.php:770
+msgid ""
+"Media-Tags support many more optional parameters which are described below. "
+"Each parameter below work within the shortcode construct by using the "
+"parameter=\"some value\" for example numberposts=\"10\". Most of the "
+"parameters used are similar to parmeters used by the WordPress <a target="
+"\"_blank\" href=\"http://codex.wordpress.org/Template_Tags/get_posts"
+"\">get_posts</a> function. "
+msgstr ""
+
+#: mediatags_settings.php:773
+msgid ""
+"Default is '-1' for all. The number of items (maximum) to display. If you "
+"have 51 items tagged 'Flags' and you set numberposts=\"10\" then only 10 "
+"will be displayed."
+msgstr ""
+
+#: mediatags_settings.php:775
+msgid ""
+"Default is 'OR'. Possible values 'OR' or 'AND'. When passing multiple values "
+"for the media_tags parameter this parameter controls how they are compares. "
+"An 'OR' compare means all elements which mean one or more of the media_tags "
+"values. An 'AND' compare mean only elements which match all values."
+msgstr ""
+
+#: mediatags_settings.php:777
+msgid ""
+"Default is '' for all. Multiple values can be used provided they are "
+"separated with commas. You can limit the type of the media elements returned "
+"to images, PDF, Excel, etc by using this parameter. There is not a section "
+"list of possible values. Some example values are jpg, gif, pdf, excel. Note "
+"this compare is done by comparing the File Type determined by WordPress. "
+"When you edit a Media item look for the 'File type' field on the form. This "
+"is usually something like application/vnd.ms-excel or image/jpeg. You can "
+"leave off the beginning part 'application/'."
+msgstr ""
+
+#: mediatags_settings.php:779
+msgid ""
+"Default is 'attachment'. Currently the only possible values for this "
+"parameter is 'attachment'."
+msgstr ""
+
+#: mediatags_settings.php:780
+msgid ""
+"Default is 'menu_order'. Controls the ordering of items displayed. Other "
+"possible value(s) are ID,"
+msgstr ""
+
+#: mediatags_settings.php:781
+msgid ""
+"Default 'ASC'.  Controls the Ascending (ASC) or Descending (DESC) order of "
+"the items."
+msgstr ""
+
+#: mediatags_settings.php:782
+msgid ""
+"Default is '0'. Controls the beginning of the displayed items. If you have "
+"51 items tagged 'Flags' and set the offset=\"10\" then the first 9 items "
+"will not be displayed."
+msgstr ""
+
+#: mediatags_settings.php:784
+msgid ""
+"Default 'li'. By default the Media-Tags shortcode will return the items as a "
+"list items. There is logic within the shortcode functions to output the "
+"wrapping &lt;ul&gt;&lt;/ul&gt; code only if items were found."
+msgstr ""
+
+#: mediatags_settings.php:785
+msgid "Default is 'slug'. No other values are supported."
+msgstr ""
+
+#: mediatags_settings.php:786
+msgid ""
+"The shortcodes functions within the Media-Tags plugin uses a default "
+"callback function to display each of the return items from the shortcode "
+"selection. You can define your own display function. Look in the plugin "
+"folder for the file named 'mediatags_shortcodes.php'. Within this file is a "
+"function 'default_item_callback' which can be copied into your own theme's "
+"functions.php file. There you can customize the callback function to your "
+"needs. You must also rename the function to something other than "
+"'default_item_callback'. Within the Media-Tags shortcode parameters you must "
+"set the 'display_item_callback' to call your new function."
+msgstr ""
+
+#: mediatags_settings.php:788
+msgid ""
+"Default is 'medium'. Related to the output callback function ad displaying "
+"of images in WordPress. As you may know WordPress supports 4 images sizes "
+"for your needs thumbnail, medium, large and full.</li>\n"
+"\t\t\t\t\t\t\t\t<li><strong>before_list</strong>: Default is '&lt;ul&gt;. "
+"You can override this default and use an ordered list or an unordered list "
+"with a specific class or id attribute. You can include a h2 header for the "
+"title before the list. </li>\n"
+"\t\t\t\t\t\t\t\t<li><strong>after_list</strong>: Default is '&lt;/ul&gt;. "
+"Obviously this closing element must match the opening element of the "
+"'before_list' parameter."
+msgstr ""
+
+#: mediatags_settings.php:801
+msgid ""
+"If you know PHP and consider yourself a programmer of sorts then the Media-"
+"Tags plugin has a good set of template functions you can also use to access "
+"the selection of Media-Tag items. All template related functions are located "
+"in the plugin file 'mediatags_template_functions.php'"
+msgstr ""
+
+#: mediatags_settings.php:804
+msgid ""
+"This function works just like the shortcode object in the previous section. "
+"But this PHP function allows for better integration and control over the PHP "
+"functionality. This function takes an array of key/value pairs like many "
+"other WordPress functions. You can refer to the shortcode parameters for the "
+"full list of acceptable keys supported."
+msgstr ""
+
+#: mediatags_settings.php:805
+msgid ""
+"Functions much like other WordPress is_* functions is_page, is_archive. "
+"Returns true is you are viewing a Media-Tags archive page."
+msgstr ""
+
+#: mediatags_settings.php:806
+msgid "Similar to the in_category function."
+msgstr ""
+
+#: mediatags_settings.php:807
+msgid "Similar to has_tag and has_category functions."
+msgstr ""
+
+#: mediatags_settings.php:808
+msgid "Similar to get_categories and get_tags functions."
+msgstr ""
+
+#: mediatags_settings.php:809
+msgid ""
+"Returns a list (not array) of Media-Tags terms. Commonly used in the sidebar "
+"to list the linked Media-Tags terms."
+msgstr ""
+
+#: mediatags_settings.php:810
+msgid ""
+"Given a Media-Tags term ID will return the href for that term. There is a "
+"second optional argument for returning the RSS version of the link href."
+msgstr ""
+
+#: mediatags_settings.php:811
+msgid ""
+"Similar to the WordPress function the_tags. Will output a comma separated "
+"list of link terms for the viewed attachment. Must be used within the WP loop"
+msgstr ""
+
+#: mediatags_settings.php:812
+msgid ""
+"Return the Name/Title of currently viewed Media-Tags term. Used like the "
+"single_cat_title or single_tag_title functions."
+msgstr ""
+
+#: mediatags_settings.php:813
+msgid ""
+"A wrapper to the generic wp_tag_cloud function. All the same parameters are "
+"supported."
+msgstr ""
+
+#: mediatags_settings.php:814
+msgid "Returns the description of a specific Media-Tags term ID if set."
+msgstr ""
+
+#: mediatags_settings.php:824
+msgid ""
+"The selection of which theme template file will be used to display the Media-"
+"Tags archives follows the published WordPress Template Hierarchy. the "
+"following templates are preferred over the previous listing since these "
+"template names are supported by WordPress and not the plugin."
+msgstr ""
+
+#: mediatags_settings.php:833
+msgid ""
+"In previous version of the Media-Tags plugin there was support for template "
+"files from the following listing. These should be considered deprecated over "
+"the above listing of WordPress supported template files. If your theme uses "
+"the older template filenames you should be able to rename theme to the newer "
+"versions without issue."
+msgstr ""
+
+#: mediatags_settings.php:837
+msgid "example: mediatag-flag.php rename to taxonomy-media-tags-flags.php"
+msgstr ""
+
+#: mediatags_settings.php:840
+msgid "example: mediatag-2.php rename to taxonomy-media-tags-flags.php"
+msgstr ""
+
+#: mediatags_settings.php:843
+msgid "rename to taxonomy-media-tags.php"
+msgstr ""
+
+#: mediatags_settings.php:855
+msgid ""
+"Similar to the Media-Tags Archive Template files. The plugin also supports "
+"the use of an RSS template file. When enabled (See Media-Tags > Settings) a "
+"new RSS output will be provided on any Media-Tags archive page. So when the "
+"user views your page http://www.mysite.com/media-tags/flags/ they can also "
+"subscribe to the RSS fee of this archive by accessing the URL. http://www."
+"mysite.com/media-tags/flags/feed/. This RSS output can be customized by "
+"copying the plugin file 'mediatags_rss.php' into your active theme folder. "
+"You can disable the automatic RSS feed option via the Media-Tags > Settings "
+"panel. "
+msgstr ""

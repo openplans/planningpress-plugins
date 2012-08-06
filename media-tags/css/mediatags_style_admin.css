@@ -1,0 +1,274 @@
+a.media-tags-show-hide-common, a.media-tags-show-hide-uncommon { clear: both;}
+
+body#media-upload tr.media-meta ul.media-tags-list {
+	list-style:none;	
+	margin: 10px 0 20px 0;
+	padding: 0 0 0 0;
+}
+
+body#media-upload tr.media-meta ul.media-tags-list li {
+	float: left;
+	margin: 0 10px 0 0;
+	padding: 0;
+	width: 30%;
+}
+
+tr.media-meta div.media-tags-list-used,
+tr.media-meta div.media-tags-list-common,
+tr.media-meta div.media-tags-list-uncommon { 
+	clear: both;
+	margin: 5px 0;
+	float: left;
+	width: 460px;
+}
+
+tr.media-meta a,
+tr.media-meta a.mediatag-show-hide-common,
+tr.media-meta a.mediatag-show-hide-uncommon { 
+	text-align: left;
+	display: block;
+}
+
+tr.media-meta div.media-tags-list-used,
+tr.media-meta div.media-tags-list-common,
+tr.media-meta div.media-tags-list-uncommon {  
+	border:1px solid #DFDFDF;
+	clear:both;
+	padding:0 0 10px 5px;
+}
+
+body.wp-admin div.media-single tr.media-meta ul.media-tags-list {
+	list-style:none;	
+	margin: 10px 0 20px 0;
+	padding: 0 0 0 0;
+}
+
+body.wp-admin tr.media-meta ul.media-tags-list li {
+	float: left;
+	margin: 0 10px 0 0;
+	padding: 0;
+}
+
+#wpbody-content .media-upload-form ul.media-tags-list li label {
+	display: inline;
+	margin: 0 0 0 2px;
+}
+
+body.wp-admin div#media-items tr.media-meta ul.media-tags-list li {
+	width: 30%;
+}
+
+body.wp-admin div.media-single tr.media-meta ul.media-tags-list li {
+	width: 20%;
+}
+
+#media-tags-bulk-panel p.header {
+	font-size: 12px;
+}
+#media-tags-bulk-panel ul.media-tags-list {
+	list-style:none;	
+	margin: 10px 0 20px 0;
+	padding: 0 0 0 0;
+}
+
+#media-tags-bulk-panel ul.media-tags-list li {
+	float: left;
+	margin: 0 10px 0 0;
+	padding: 0;
+	width: 100px;
+}
+
+#media-tags-bulk-panel input#media_tags_input {
+	width: 90%;
+}
+
+#media-tags-bulk-selection-error p,
+#media-tags-error p {
+	color: #ff0000;
+}
+
+#media-tags-bulk-panel p {
+	padding-top: 0;
+	margin-top: 0;
+}
+
+
+#media-tags-bulk-panel ul.media-tags-list li {
+	float: left;
+	margin: 0 10px 0 0;
+	padding: 0;
+	width: 115px;
+}
+
+#media-tags-bulk-panel #media-tag-action-container {
+	width: 40%;
+	float: left;
+	height: 40px;
+}
+
+#media-tags-bulk-panel #media-tag-action-container label,
+#media-tags-bulk-panel #mediatag-new-input-container label {
+	font-size: 12px;
+	font-weight: normal;
+}
+
+#media-tags-bulk-panel #media-tag-action-container input {
+	padding: 5px;
+}
+
+#media-tags-bulk-panel #mediatag-new-input-container {
+	width: 60%;
+	float: left;	
+}
+
+#media-tags-bulk-panel #mediatag-new-input-container input#media_tags_input {
+	width: 90%;
+	padding: 1px;
+}
+
+#media-tags-bulk-panel .media-tags-list-common {
+	width: 100%;
+}
+
+#media-items .media-tags-bulk-column {
+	float: right;
+	padding: 10px 5px 0 0;
+	width: 15px;
+}
+
+th.media-tags-bulk-column {
+	width: 5px;
+}
+
+th.media-tags-bulk-column input#mediatag-check-all {
+}
+
+div.media-tags-bulk-header {
+	float: right;
+	text-align: right;
+	border: 0px solid red;
+	margin-right: 10px;
+	padding-bottom: 10px;
+}
+
+#media-tag-bulk-gallery-container #media-tags-bulk-panel {
+	border: 1px solid #DFDFDF;
+	float: left;
+	padding: 10px 5px 0 5px;
+}
+
+#sort-buttons span.media-tab-bulk-trigger-container { margin-right: 10px; }
+#sort-buttons span.media-tab-bulk-trigger-container a.media-tag-bulk-gallery-trigger {  text-decoration: none;}
+#sort-buttons span.media-tab-bulk-trigger-container a.media-tag-bulk-gallery-trigger:hover { text-decoration: underline;}
+
+#media-tag-bulk-gallery-container #media-tags-bulk-panel #media-items-count-container {
+	display: none;
+}
+
+#media-tag-bulk-gallery-container {
+	margin: 1em;
+	float: left;
+}
+
+form#library-form span.media-tab-bulk-trigger-container {
+	float: left;
+	font-size: 0.8em;
+}
+
+div.media-tags-bulk-header {
+	font-size: 0.8em;
+}
+
+div.media-tags-role-legend {
+	text-align: right;
+}
+
+div.media-tags-role-legend span.color {
+	background-color: #ccc;
+	float: right;
+	width: 15px;
+	height: 15px;
+	margin: 0 4px;
+}
+
+
+table.media-tags-role-management th,
+table.media-tags-role-management td {
+	text-align: center;
+}
+
+table.media-tags-role-management th.user-id {
+	width: 1%;
+}
+
+table.media-tags-role-management th.user {
+	width: 40%;
+}
+
+table.media-tags-role-management th.setting {
+	width: 10%;
+}
+
+table.media-tags-role-management th {
+	padding: 5px 10px;
+	border: 1px solid #ccc;
+}
+
+table.media-tags-role-management th.role-default {
+	background-color: #ccc;
+}
+
+table.media-tags-role-management td {
+	
+}
+
+table.media-tags-role-management td.yes {
+	color: green;
+}
+
+table.media-tags-role-management td.no {
+	color: red;
+}
+
+table.media-tags-role-management td label {
+	padding-left: 3px;
+}
+
+.meta-box-sortabless .media-tags-settings-postbox ul {
+	margin-left: 25px;
+}
+.meta-box-sortabless .media-tags-settings-postbox li {
+	font-size: 11px;
+}
+
+#mediatag-about ul {
+	margin-left: 5px;
+}
+
+#mediatag-about ul li {
+	margin-left: 0;
+}
+
+select#mediatag_rss_feed,
+select#mediatag_admin_bulk_library,
+select#mediatag_admin_bulk_inline {
+	width: 50px;
+}
+
+.media-tags-settings-postbox ul,
+.media-tags-settings-postbox ol {
+	
+}
+
+.media-tags-settings-postbox ul li,
+.media-tags-settings-postbox ol li {
+	margin: 5px 50px;
+	
+}
+
+#mediatag-roles-legend ul {
+	margin: 5px;
+}
+#mediatag-roles-legend ul li {
+	margin: 5px 0;
+}

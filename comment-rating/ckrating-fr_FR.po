@@ -1,0 +1,64 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comment Rating v2.8.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2009-11-01 09:05+0100\n"
+"Last-Translator: admin <webmaster@supernatural-tv-show.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Poedit-Language: French\n"
+"X-Poedit-Country: FRANCE\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-Basepath: \n"
+"X-Poedit-Bookmarks: \n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Textdomain-Support: yes"
+
+#: comment-rating.php:254
+#: comment-rating.php:281
+#@ ckrating
+msgid "Thumb up"
+msgstr "+1"
+
+#: comment-rating.php:255
+#: comment-rating.php:287
+#@ ckrating
+msgid "Thumb down"
+msgstr "-1"
+
+#: comment-rating.php:325
+#@ ckrating
+msgid "Hidden due to"
+msgstr "Caché à cause de"
+
+#: comment-rating.php:325
+#@ ckrating
+msgid "low"
+msgstr "très"
+
+#: comment-rating.php:328
+#: comment-rating.php:333
+#@ ckrating
+msgid "comment rating"
+msgstr "mauvaise notes"
+
+#: comment-rating.php:332
+#@ ckrating
+msgid "Rated by other readers"
+msgstr "Noté par les autres lecteurs"
+
+#: comment-rating.php:335
+#@ ckrating
+msgid "Click to see comment"
+msgstr "Cliquer ici pour voir le commentaire"
+
+#: comment-rating.php:335
+#@ ckrating
+msgid "Click here to see"
+msgstr "Cliquer ici pour voir"
+

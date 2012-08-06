@@ -1,0 +1,19 @@
+#content li.argo-legend-item {
+margin: 0;
+font-family: Verdana, Arial, Helvetica, sans-serif;
+font-size: 11px;
+padding: 3px;
+}
+
+#content div.argo-legend-desc-content {
+line-height: 1.2em;
+}
+
+#content input.argo-legend-checkbox {
+margin: 3px 0.5ex;
+}
+
+#content ul.argo-legend-list {
+padding-bottom: 0;
+margin-bottom: 0;
+}
