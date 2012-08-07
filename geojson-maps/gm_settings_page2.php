@@ -1,1 +1,0 @@
-<div class="wrap"><h2><?php print GM_PUGIN_NAME ." ". GM_CURRENT_VERSION. "<sub>(Build ".GM_CURRENT_BUILD.")</sub>"; ?></h2>more settings</div>
