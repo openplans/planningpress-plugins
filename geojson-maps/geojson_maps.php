@@ -148,6 +148,7 @@ function gm_layer_popup( $post ) {
 function gm_inner_custom_box( $post ) {
   $url = get_post_meta($post->ID, 'gm_url', true);
   $property = get_post_meta($post->ID, 'gm_property', true);
+  $type = get_post_meta($post->ID, 'gm_type', true);
   // Use nonce for verification
   wp_nonce_field( plugin_basename( __FILE__ ), 'gm_noncename' );
 
@@ -160,6 +161,16 @@ function gm_inner_custom_box( $post ) {
   echo 'Property';
   echo '</label> <br/>';
   echo '<input type="text" id="gm_property" name="gm_property" value="' . $property . '" size="15" /></p>';
+  echo '<p><label for="gm_type">';
+  echo 'Type';
+  echo '</label> <br/>';
+  echo '<select id="gm_type" name="gm_type"><option value="geoserver"';
+  echo ($type=='geoserver') ? ' selected="selected"' : '';
+  echo '>geoserver</option><option value="json"';
+  echo ($type=='json') ? ' selected="selected"' : '';
+  echo '>json</option><option value="jsonp"';
+  echo ($type=='jsonp') ? ' selected="selected"' : '';
+  echo '>jsonp</option></select></p>';
 }
 
 /* When the post is saved, saves our custom data */
@@ -186,6 +197,8 @@ function gm_save_postdata( $post_id ) {
   update_post_meta($post_id, 'gm_url', $mydata);
   $mydata = $_POST['gm_property'];
   update_post_meta($post_id, 'gm_property', $mydata);
+  $mydata = $_POST['gm_type'];
+  update_post_meta($post_id, 'gm_type', $mydata);
   $mydata = $_POST['gm_rules'];
   update_post_meta($post_id, 'gm_rules', $mydata);
   $mydata = $_POST['gm_popup'];
@@ -296,6 +309,7 @@ function getArgo() {
     $out .= "url: '" . get_post_meta($post->ID, 'gm_url', true) . "',\n";
     $out .= "property: '" . get_post_meta($post->ID, 'gm_property', true) . "',\n";
     $out .= "title: '" . get_the_title() . "',\n";
+    $out .= "type: '" . get_post_meta($post->ID, 'gm_type', true) . "',\n";
     $out .= "description: '" . get_the_content() . "',\n";
     $out .= "popupContent: '" . get_post_meta($post->ID, 'gm_popup', true) . "',\n";
     $out .= "rules: " . get_post_meta($post->ID, 'gm_rules', true) . "\n";
