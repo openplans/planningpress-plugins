@@ -2,7 +2,7 @@
 /*
 Plugin Name: GeoJSON Maps
 Plugin URI: http://openplans.org
-Description: An empty plugin template to start with, including the most basic necessary stuff
+Description: Allows people to publish GeoJSON feeds on a map and embed it in a Wordpress page.
 Version: 0.1
 Author: Chris Abraham
 Author URI: http://cjyabraham.com
