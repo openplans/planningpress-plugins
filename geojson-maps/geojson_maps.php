@@ -157,10 +157,6 @@ function gm_inner_custom_box( $post ) {
   echo "GeoJSON URL";
   echo '</label><br/>';
   echo '<input type="text" id="gm_url" name="gm_url" value="' . $url . '" size="30" /></p>';
-  echo '<p><label for="gm_property">';
-  echo 'Property';
-  echo '</label> <br/>';
-  echo '<input type="text" id="gm_property" name="gm_property" value="' . $property . '" size="15" /></p>';
   echo '<p><label for="gm_type">';
   echo 'Type';
   echo '</label> <br/>';
@@ -171,6 +167,10 @@ function gm_inner_custom_box( $post ) {
   echo '>json</option><option value="jsonp"';
   echo ($type=='jsonp') ? ' selected="selected"' : '';
   echo '>jsonp</option></select></p>';
+  echo '<p><label for="gm_property">';
+  echo 'Property';
+  echo '</label> <br/>';
+  echo '<input type="text" id="gm_property" name="gm_property" value="' . $property . '" size="15" /></p>';
 }
 
 /* When the post is saved, saves our custom data */

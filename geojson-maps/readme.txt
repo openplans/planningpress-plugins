@@ -8,20 +8,20 @@ Stable tag: 0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Allows people to publish GeoJSON feeds on a map and embed it in a Wordpress page.
+Allows people to display GeoJSON feeds on a map.
 
 == Description ==
 
-GeoJSON Maps facilitates publishing multiple GeoJSON feeds on a map.  It also allows for a custom legend to toggle on/off each data layer.  The map can be displayed on a Wordpress post or page via a short code.  All you need is some [GeoJSON](http://geojson.org/) feeds and some styling markup.  See [here](http://demo.planningpress.org/map/) for a demo.  
+GeoJSON Maps facilitates displaying multiple GeoJSON feeds on a map.  It has a custom legend to toggle on/off each data layer.  The map can be displayed on a Wordpress post or page via a short code.  All you need is some [GeoJSON](http://geojson.org/) feeds (both json and jsonp) and some styling markup.  See [here](http://demo.planningpress.org/map/) for a demo.  
 
-GeoJSON Maps uses [Argo](https://github.com/openplans/argo).  It's configuration is provided [here](https://github.com/openplans/argo/wiki/Configuration-Guide).  Take note of the "rules" and "popupContent" items as they need to be entered when setting up a layer.  So, for the Street Vendors layer, "rules" should be set to something like:
+GeoJSON Maps uses [Argo](https://github.com/openplans/argo).  Its configuration is provided [here](https://github.com/openplans/argo/wiki/Configuration-Guide).  Take note of the "rules" and "popupContent" items to be entered when setting up a layer.  So, in the Street Vendors layer from the [demo](http://demo.planningpress.org/map/), "Layer Rules" is set to:
 
     [{
       condition: 'true',
       style: {color: '#444444', radius: 1, opacity: 0.9}
     }]
 
-For the Crashes layer, "Popup text" should be set to: 
+For the Crashes layer, "Popup Text" is set to: 
 
     {{value}} crashes
 
