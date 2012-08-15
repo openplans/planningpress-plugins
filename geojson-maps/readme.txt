@@ -29,6 +29,9 @@ For the Crashes layer, "Popup Text" is set to:
 
 1. Upload GeoJSON Maps to the `/wp-content/plugins/` directory
 1. Activate the plugin through the 'Plugins' menu in WordPress
+
+== Configuration ==
+
 1. Adjust global map settings by going to Settings | GeoJSON Maps
 1. Add layers to the map using the Map Layers custom post type in the admin interface; for Style Rules, see: https://github.com/openplans/argo/wiki/Configuration-Guide
 1. Place shortcode [geojson-map] on page or post where you want the map to display
