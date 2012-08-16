@@ -29,10 +29,10 @@ function svc_post_comment($post_id, $heading, $pitch, $zoom, $desc) {
     'comment_post_ID' => $post_id,
     'comment_content' => $desc,
     'comment_date' => $time,
-    'comment_approved' => 1,
+    'comment_approved' => '1'
   );
 
-  $comment_id = wp_insert_comment($data);
+  $comment_id = wp_new_comment($data);
 
   add_comment_meta($comment_id, 'pitch', $pitch, true);
   add_comment_meta($comment_id, 'heading', $heading, true);
@@ -227,7 +227,7 @@ function svc_create_post_type() {
 			  'public' => true,
 			  'exclude_from_search' => true,
 			  'has_archive' => true,
-			  'supports' => array('title', 'comments', 'page-attributes'),
+			  'supports' => array('title', 'comments', 'page-attributes', 'author'),
 			  'rewrite' => array('slug' => 'intersections')
 	                 )
 		    );
