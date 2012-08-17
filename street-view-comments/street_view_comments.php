@@ -85,7 +85,8 @@ function svc_intersections(){
 function svc_show_mapper($atts){
   extract( shortcode_atts( array(
       'background' => plugins_url('css/mapslider.png', __FILE__),
-      'mainstreet' => 'Broome St.'
+      'mainstreet' => 'Broome St.',
+      'tag' => ''
       ), $atts ) );
 
   $out = '<link rel="stylesheet" type="text/css" href="' . plugins_url( 'js/lib/jquery-ui-1.8.21.custom.css' , __FILE__ ) . '" />';
@@ -231,6 +232,32 @@ function svc_create_post_type() {
 			  'rewrite' => array('slug' => 'intersections')
 	                 )
 		    );
+
+  $labels = array(
+    'name' => _x( 'Tags', 'taxonomy general name' ),
+    'singular_name' => _x( 'Tag', 'taxonomy singular name' ),
+    'search_items' =>  __( 'Search Tags' ),
+    'popular_items' => __( 'Popular Tags' ),
+    'all_items' => __( 'All Tags' ),
+    'parent_item' => null,
+    'parent_item_colon' => null,
+    'edit_item' => __( 'Edit Writer' ), 
+    'update_item' => __( 'Update Tag' ),
+    'add_new_item' => __( 'Add New Tag' ),
+    'new_item_name' => __( 'New Tag Name' ),
+    'separate_items_with_commas' => __( 'Separate tags with commas' ),
+    'add_or_remove_items' => __( 'Add or remove tags' ),
+    'choose_from_most_used' => __( 'Choose from the most used tags' ),
+    'menu_name' => __( 'Tags' ),
+  ); 
+
+
+  register_taxonomy(
+    'svc_intersection_tags',
+    'svc_intersection',
+    array('labels'=>$labels)
+    );
+
 }
 
 function svc_intersection_custom_columns($column) {
