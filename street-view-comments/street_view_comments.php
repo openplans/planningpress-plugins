@@ -45,7 +45,13 @@ function svc_post_comment($post_id, $heading, $pitch, $zoom, $desc) {
 function svc_intersections(){
   global $post;
   header( "Content-Type: application/json" );
-  query_posts('post_type=svc_intersection&posts_per_page=-1&orderby=menu_order&order=asc');
+  query_posts(array(
+            'post_type' => 'svc_intersection',
+	    'posts_per_page' => -1,
+	    'orderby' => 'menu_order',
+	    'order' => 'asc',
+	    'svc_intersection_tags' => 'sunset-park'
+	    ));
   $i = array();
   if ( have_posts() ) : while ( have_posts() ) : the_post();
     $j = array();
