@@ -66,6 +66,8 @@ function gm_register_settings() {
 	register_setting( 'gm-settings-group', 'gm_minzoom' );
 	register_setting( 'gm-settings-group', 'gm_maxzoom' );
 	register_setting( 'gm-settings-group', 'gm_maxbounds' );
+	register_setting( 'gm-settings-group', 'gm_height' );
+	register_setting( 'gm-settings-group', 'gm_width' );
 	register_setting( 'gm-settings-group', 'gm_lat' );
 	register_setting( 'gm-settings-group', 'gm_lng' );
 }
@@ -236,8 +238,19 @@ function gm_layer_sortable_column( $columns ) {
 wp_enqueue_script( 'jquery' );
 
 function gm_show_map( $atts ){
+  $gm_width = get_option('gm_width');
+  $gm_height = get_option('gm_height');
+  $style = '';
+  if ($gm_width or $gm_height) {
+    $style = 'style="';
+      if ($gm_width) 
+        $style .= 'width:' . $gm_width . 'px;';
+      if ($gm_height) 
+        $style .= 'height:' . $gm_height . 'px;';
+    $style .= '"';
+  }
 
-  $out = '<div id="argo-container"><div id="argo-map"></div><div id="argo-legend"></div></div>';
+  $out = '<div id="argo-container" ' . $style . '><div id="argo-map" ' . $style . '></div><div id="argo-legend"></div></div>';
   $out .= '<script src="' . plugins_url('js/lib/leaflet-0.4.2/leaflet.js', __FILE__) . '"></script>';
   $out .= '<script src="' . plugins_url('js/lib/underscore-1.3.3.min.js', __FILE__) . '"></script>';
   $out .= '<script src="' . plugins_url('js/lib/backbone-0.9.2.min.js', __FILE__) . '"></script>';
