@@ -48,7 +48,7 @@ var Argo = Argo || {};
           getGeoJsonFunction = type === 'geoserver' ?
             self.getGeoJsonFromGeoServer : self.getGeoJson;
 
-      getGeoJsonFunction(url, type, function(geoJson) {
+      getGeoJsonFunction(url, self.model.toJSON(), function(geoJson) {
         if (geoJson) {
           self.layer = L.geoJson(geoJson, {
             pointToLayer: function (feature, latlng) {
@@ -58,20 +58,27 @@ var Argo = Argo || {};
               var style = self.getStyleRule(feature.properties),
                   popupContent = self.getPopupContent(feature.properties);
 
-              // Only clickable if there is popup content; convert to bool
-              style.clickable = !!popupContent;
+              if (style) {
+                // Only clickable if there is popup content; convert to bool
+                style.clickable = !!popupContent;
 
-              // Set the style manually since so I can use popupContent to set clickable
-              layer.setStyle(style);
+                // Set the style manually since so I can use popupContent to set clickable
+                layer.setStyle(style);
 
-              // Handle radius for circle marker
-              if (layer.setRadius && style.radius) {
-                layer.setRadius(style.radius);
-              }
+                // Handle radius for circle marker
+                if (layer.setRadius && style.radius) {
+                  layer.setRadius(style.radius);
+                }
 
-              // Init the popup
-              if (popupContent) {
-                layer.bindPopup(popupContent);
+                // Init the popup
+                if (popupContent) {
+                  layer.bindPopup(popupContent);
+                }
+              } else {
+                layer.setStyle({
+                  fill: false,
+                  stroke: false
+                });
               }
             }
           });
@@ -85,8 +92,8 @@ var Argo = Argo || {};
       // Rerender on model change
       self.model.bind('change', self.render, self);
     },
-    getGeoJsonFromGeoServer: function(url, type, callback) {
-      var callbackName = 'ArgoJsonpCallback_' + $.expando + '_' + $.now();
+    getGeoJsonFromGeoServer: function(url, options, callback) {
+      var callbackName = 'ArgoJsonpCallback_' + options.id + '_' + $.expando + '_' + $.now();
       // Fetch the GeoJson from GeoServer
       $.ajax({
         url: url + '&format_options=callback:' + callbackName,
@@ -95,11 +102,11 @@ var Argo = Argo || {};
         success: callback
       });
     },
-    getGeoJson: function(url, type, callback) {
+    getGeoJson: function(url, options, callback) {
       // Fetch the GeoJson using the given type
       $.ajax({
         url: url,
-        dataType: type,
+        dataType: options.type,
         success: callback
       });
     },

@@ -45,13 +45,15 @@ function svc_post_comment($post_id, $heading, $pitch, $zoom, $desc) {
 function svc_intersections(){
   global $post;
   header( "Content-Type: application/json" );
-  query_posts(array(
+  $query_args = array(
             'post_type' => 'svc_intersection',
 	    'posts_per_page' => -1,
 	    'orderby' => 'menu_order',
-	    'order' => 'asc',
-	    'svc_intersection_tags' => 'sunset-park'
-	    ));
+	    'order' => 'asc'
+	    );
+  if ($_GET['tag'])
+    $query_args['svc_intersection_tags'] = $_GET['tag'];
+  query_posts($query_args);
   $i = array();
   if ( have_posts() ) : while ( have_posts() ) : the_post();
     $j = array();
@@ -142,13 +144,12 @@ EOD;
   $out .= '<script src="' . plugins_url( 'js/lib/json2.min.js' , __FILE__ ) . '"></script>';
   $out .= '<script src="' . plugins_url( 'js/lib/underscore-1.3.3.min.js' , __FILE__ ) . '"></script>';
   $out .= '<script src="' . plugins_url( 'js/lib/backbone-0.9.2.min.js' , __FILE__ ) . '"></script>';
-  $out .= '<script src="' . plugins_url( 'js/lib/backbone.localStorage-min.js' , __FILE__ ) . '"></script>';
 
   $out .= '<script src="' . plugins_url( 'js/routes.js' , __FILE__ ) . '"></script>';
   $out .= '<script src="' . plugins_url( 'js/views.js', __FILE__ ) . '"></script>';
 
   $out .= "\n<script>\n(function(F){\nBackbone.emulateHTTP = true;\n";
-  $out .= "F.LocationCollection = Backbone.Collection.extend({\n  url: '" . get_bloginfo('url') . "/wp-admin/admin-ajax.php?action=intersections'\n});\n";
+  $out .= "F.LocationCollection = Backbone.Collection.extend({\n  url: '" . get_bloginfo('url') . "/wp-admin/admin-ajax.php?action=intersections&tag=" . $tag . "'\n});\n";
   $out .= "F.FeedbackModel = Backbone.Model.extend({\n  url: '" . get_bloginfo('url') . "/wp-admin/admin-ajax.php?action=feedback'\n});\n";
 
   $out .= <<<EODD
