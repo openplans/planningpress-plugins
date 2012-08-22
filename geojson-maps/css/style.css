@@ -8,16 +8,13 @@ p {
 }
 
 #argo-container {
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  position: absolute;
+  width: 600px;
+  position: relative;
 }
 
 #argo-map {
-  width: 100%;
-  height: 100%;
+  width: 600px;
+  height: 400px;
 }
 
 #argo-legend {
@@ -26,16 +23,16 @@ p {
   right: 10px;
   width: 150px;
   z-index: 10;
+
+  border: 1px solid #0A9F67;
+  color: #444;
+  background-color: #fff;
 }
 
 .argo-legend-list {
   list-style-type: none;
   margin: 0;
   padding: 0;
-
-  border: 1px solid #0A9F67;
-  color: #444;
-  background-color: #fff;
 }
 
 .argo-legend-item {
