@@ -275,7 +275,7 @@ strong {
 
 /* Slider */
 .dot-slider {
-  background: transparent url("mapslider.png") no-repeat left center !important;
+  background: transparent url("mapslider.png") no-repeat left center;
   border:none;
   height:140px;
   width:100%;
@@ -286,7 +286,7 @@ strong {
 }
 
 .dot-slider .ui-slider-handle {
-  background: transparent url("mapslider-handle.png") no-repeat center center !important;
+  background: transparent url("mapslider-handle.png") no-repeat center center;
   width: 49px;
   height:49px;
   margin-left:-24px;

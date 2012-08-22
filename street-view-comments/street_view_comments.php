@@ -131,7 +131,7 @@ function svc_show_mapper($atts){
     <div class="dot-slider-container">
       <div class="dot-tooltip dot-tooltip-youarehere">You Are Here</div>	
       <div class="dot-tooltip dot-tooltip-comments"></div>
-      <div class="dot-slider" style="background: transparent url('$background') no-repeat left center !important;"></div>
+      <div class="dot-slider" style="background-image: url('$background');"></div>
       <div class="dot-feedback-activity"></div>
     </div>
   </div>

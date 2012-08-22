@@ -63,7 +63,7 @@ var Argo = Argo || {};
         self.popupTemplate = _.template(self.model.get('popupContent'));
       }
 
-      getGeoJsonFunction(url, self.model.toJSON(), function(geoJson) {
+      getGeoJsonFunction.call(this, url, self.model.toJSON(), function(geoJson) {
         if (geoJson) {
           self.layer = L.geoJson(geoJson, {
             pointToLayer: function (feature, latlng) {
@@ -107,8 +107,18 @@ var Argo = Argo || {};
       // Rerender on model change
       self.model.bind('change', self.render, self);
     },
+
+    getGeoServerCallbackName: function(id) {
+      // Get rid of any invalid characters for a JS var
+      var safeId = id.replace(/[^\w\d]/g, ''),
+          callbackName = 'ArgoJsonpCallback_' + safeId + '_' + $.expando + '_' + $.now();
+
+      return callbackName;
+    },
+
     getGeoJsonFromGeoServer: function(url, options, callback) {
-      var callbackName = 'ArgoJsonpCallback_' + options.id + '_' + $.expando + '_' + $.now();
+      var callbackName = this.getGeoServerCallbackName(options.id);
+
       // Fetch the GeoJson from GeoServer
       $.ajax({
         url: url + '&format_options=callback:' + callbackName,
