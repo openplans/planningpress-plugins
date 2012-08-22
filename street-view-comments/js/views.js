@@ -16,8 +16,10 @@ var Fitzgerald = Fitzgerald || {};
       F.on('locationupdatebygraph', this.onLocationUpdate, this);
     },
     onLocationUpdate: function(model) {
-      this.locationModel = model;
-      this.render();
+      if (model) {
+        this.locationModel = model;
+        this.render();
+      }
     },
     render: function(){
       this.setTitle(this.locationModel.get('name'));
@@ -49,8 +51,10 @@ var Fitzgerald = Fitzgerald || {};
       F.on('povupdatebyview', this.setPov, this);
     },
     onLocationUpdate: function(model) {
-      this.locationModel = model;
-      this.render();
+      if (model) {
+        this.locationModel = model;
+        this.render();
+      }
     },
     render: function() {
       this.setPosition(this.locationModel.get('lat'), this.locationModel.get('lng'));
@@ -117,8 +121,10 @@ var Fitzgerald = Fitzgerald || {};
       F.on('povupdatebystreetview', this.setPov, this);
     },
     onLocationUpdate: function(model) {
-      this.locationModel = model;
-      this.render();
+      if (model) {
+        this.locationModel = model;
+        this.render();
+      }
     },
     render: function(){
       $('input[name="lat"]').val(this.locationModel.get('lat'));
@@ -256,8 +262,10 @@ var Fitzgerald = Fitzgerald || {};
       }
     },
     onLocationUpdate: function(model) {
-      this.locationModel = model;
-      this.render();
+      if (model) {
+        this.locationModel = model;
+        this.render();
+      }
     },
     render: function(){
       var self = this,
@@ -343,8 +351,10 @@ var Fitzgerald = Fitzgerald || {};
       F.on('locationupdatebygraph', this.hide, this);
     },
     onLocationUpdate: function(model) {
-      this.locationModel = model;
-      this.render();
+      if (model) {
+        this.locationModel = model;
+        this.render();
+      }
     },
     render: function(){
       var percent = this.collection.indexOf(this.locationModel) / this.collection.length;
@@ -363,8 +373,10 @@ var Fitzgerald = Fitzgerald || {};
       this.collection.bind('change', this.render, this);
     },
     onLocationUpdate: function(model) {
-      this.locationModel = model;
-      this.render();
+      if (model) {
+        this.locationModel = model;
+        this.render();
+      }
     },
     render: function(){
       var percent = this.collection.indexOf(this.locationModel) / this.collection.length,
@@ -388,11 +400,13 @@ var Fitzgerald = Fitzgerald || {};
       F.on('locationupdatebygraph', this.onLocationUpdate, this);
     },
     onLocationUpdate: function(model) {
-      this.locationModel = model;
-      this.setPosition();
+      if (model) {
+        this.locationModel = model;
+        this.setPosition();
 
-      if (this.router) {
-        this.router.navigate(this.locationModel.get('id').toString());
+        if (this.router) {
+          this.router.navigate(this.locationModel.get('id').toString());
+        }
       }
     },
     render: function() {

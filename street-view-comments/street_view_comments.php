@@ -209,7 +209,14 @@ EOD;
     })
 
     // Fetch the location records
-    collection.fetch();
+    collection.fetch({
+      success: function(intersections, res) {
+        // Set the width of the container to match the chart width exactly
+        var container = jQuery('#dot-container'),
+            exactWidth = Math.floor(container.width() / intersections.size()) * intersections.size();
+        container.width(exactWidth);
+      }
+    });
   });
   })(Fitzgerald);
   </script>

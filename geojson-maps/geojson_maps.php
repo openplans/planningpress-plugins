@@ -263,7 +263,7 @@ function gm_show_map( $atts ){
   }
 
   $out = '<div id="argo-container" ' . $style . '><div id="argo-map" ' . $style . '></div><div id="argo-legend"></div></div>';
-  $out .= '<script src="' . plugins_url('js/lib/leaflet-0.4.2/leaflet.js', __FILE__) . '"></script>';
+  $out .= '<script src="' . plugins_url('js/lib/leaflet-0.4.4/leaflet.js', __FILE__) . '"></script>';
   $out .= '<script src="' . plugins_url('js/lib/underscore-1.3.3.min.js', __FILE__) . '"></script>';
   $out .= '<script src="' . plugins_url('js/lib/backbone-0.9.2.min.js', __FILE__) . '"></script>';
   $out .= '<script src="' . plugins_url('js/views.js', __FILE__) . '"></script>';
@@ -297,8 +297,8 @@ add_shortcode( 'geojson-map', 'gm_show_map' );
 add_action('wp_head', 'gm_insert_in_head');
 function gm_insert_in_head() {
 
-    echo '<link rel="stylesheet" href="' . plugins_url('js/lib/leaflet-0.4.2/leaflet.css', __FILE__) . '" />';
-    echo '<!--[if lte IE 8]><link rel="stylesheet" href="' . plugins_url('js/lib/leaflet-0.4.2/leaflet.ie.css', __FILE__) . '" /><![endif]-->';
+    echo '<link rel="stylesheet" href="' . plugins_url('js/lib/leaflet-0.4.4/leaflet.css', __FILE__) . '" />';
+    echo '<!--[if lte IE 8]><link rel="stylesheet" href="' . plugins_url('js/lib/leaflet-0.4.4/leaflet.ie.css', __FILE__) . '" /><![endif]-->';
 ?>
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
