@@ -329,11 +329,20 @@ function getArgo() {
     $postnum += 1;
     if ($postnum > 1)
       $out .= ",";
+    if (get_post_meta($post->ID, 'gm_legend', true) == 'on')
+      $legend_txt = 'true';
+    else
+      $legend_txt = 'false';
+    if (get_post_meta($post->ID, 'gm_visible', true) == 'on')
+      $visible_txt = 'true';
+    else
+      $visible_txt = 'false';
+   
     $out .= "{\n";
     $out .= "id: '" . $post->post_name . "',\n";
     $out .= "url: '" . get_post_meta($post->ID, 'gm_url', true) . "',\n";
-    $out .= "visible: '" . get_post_meta($post->ID, 'gm_visible', true) . "',\n";
-    $out .= "legend: '" . get_post_meta($post->ID, 'gm_legend', true) . "',\n";
+    $out .= "visible: $visible_txt,\n";
+    $out .= "legend: $legend_txt,\n";
     $out .= "title: '" . get_the_title() . "',\n";
     $out .= "type: '" . get_post_meta($post->ID, 'gm_type', true) . "',\n";
     $out .= "description: '" . get_the_content() . "',\n";
