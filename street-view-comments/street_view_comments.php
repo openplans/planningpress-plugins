@@ -3,7 +3,7 @@
 Plugin Name: Street View Comments
 Plugin URI: 
 Description: Allows for comments to be associated with Google Street View images along a street.
-Version: 0.1
+Version: 0.2
 Author: Chris Abraham
 Author URI: http://cjyabraham.com
 */
