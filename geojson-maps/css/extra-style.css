@@ -17,3 +17,7 @@ margin: 3px 0.5ex;
 padding-bottom: 0;
 margin-bottom: 0;
 }
+
+#content .leaflet-container img {
+max-width: none !important;
+}
