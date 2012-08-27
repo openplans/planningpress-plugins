@@ -23,7 +23,8 @@ GeoJSON Maps uses [Argo](https://github.com/openplans/argo).  Its configuration 
 
 For the Crashes layer, "Popup Text" is set to: 
 
-    {{value}} crashes
+    {{ICOUNT}} crashes
+
 
 == Installation ==
 
