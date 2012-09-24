@@ -1,12 +1,14 @@
 <?php
 /*
 Plugin Name: Street View Comments
-Plugin URI: 
+Plugin URI:
 Description: Allows for comments to be associated with Google Street View images along a street.
 Version: 0.2
 Author: Chris Abraham
 Author URI: http://cjyabraham.com
 */
+
+wp_enqueue_script( 'jquery' );
 
 // THE AJAX ADD ACTIONS
 add_action( 'wp_ajax_intersections', 'svc_intersections' );
@@ -47,10 +49,10 @@ function svc_intersections(){
   header( "Content-Type: application/json" );
   $query_args = array(
             'post_type' => 'svc_intersection',
-	    'posts_per_page' => -1,
-	    'orderby' => 'menu_order',
-	    'order' => 'asc'
-	    );
+            'posts_per_page' => -1,
+            'orderby' => 'menu_order',
+            'order' => 'asc'
+            );
   if ($_GET['tag'])
     $query_args['svc_intersection_tags'] = $_GET['tag'];
   query_posts($query_args);
@@ -63,7 +65,7 @@ function svc_intersections(){
     $j['id'] = $post->ID;
     $args = array(
       'status' => 'approve',
-      'post_id' => $post->ID 
+      'post_id' => $post->ID
     );
     $comments = get_comments($args);
     $comments_out = array();
@@ -123,13 +125,13 @@ function svc_show_mapper($atts){
       <ul class="dot-feedback"></ul>
       <div class="dot-feedback-nav">
         <span class="dot-feedback-nav-prev"><a href="#">prev</a></span>
-	<span class="dot-feedback-nav-state"></span>
+        <span class="dot-feedback-nav-state"></span>
         <span class="dot-feedback-nav-next"><a href="#">next</a></span>
-      </div>    
+      </div>
     </div>
 
     <div class="dot-slider-container">
-      <div class="dot-tooltip dot-tooltip-youarehere">You Are Here</div>	
+      <div class="dot-tooltip dot-tooltip-youarehere">You Are Here</div>
       <div class="dot-tooltip dot-tooltip-comments"></div>
       <div class="dot-slider" style="background-image: url('$background');"></div>
       <div class="dot-feedback-activity"></div>
@@ -231,21 +233,21 @@ add_action( 'init', 'svc_create_post_type' );
 function svc_create_post_type() {
   register_post_type( 'svc_intersection',
                     array(
-	                  'labels' => array(
-			                    'name' => __( 'Intersections' ),
-					    'singular_name' => __( 'Intersection' ),
-			                    'add_new_item' => __( 'Add New Intersection' ),
-					    'edit_item' => __( 'Edit Intersection' ),
-			                    'search_items' => __( 'Search Intersections' ),
-					    'not_found' =>  __('No intersections found'),
-					   ),
-			  'public' => true,
-			  'exclude_from_search' => true,
-			  'has_archive' => true,
-			  'supports' => array('title', 'comments', 'page-attributes', 'author'),
-			  'rewrite' => array('slug' => 'intersections')
-	                 )
-		    );
+                          'labels' => array(
+                                            'name' => __( 'Intersections' ),
+                                            'singular_name' => __( 'Intersection' ),
+                                            'add_new_item' => __( 'Add New Intersection' ),
+                                            'edit_item' => __( 'Edit Intersection' ),
+                                            'search_items' => __( 'Search Intersections' ),
+                                            'not_found' =>  __('No intersections found'),
+                                           ),
+                          'public' => true,
+                          'exclude_from_search' => true,
+                          'has_archive' => true,
+                          'supports' => array('title', 'comments', 'page-attributes', 'author'),
+                          'rewrite' => array('slug' => 'intersections')
+                         )
+                    );
 
   $labels = array(
     'name' => _x( 'Tags', 'taxonomy general name' ),
@@ -255,7 +257,7 @@ function svc_create_post_type() {
     'all_items' => __( 'All Tags' ),
     'parent_item' => null,
     'parent_item_colon' => null,
-    'edit_item' => __( 'Edit Writer' ), 
+    'edit_item' => __( 'Edit Writer' ),
     'update_item' => __( 'Update Tag' ),
     'add_new_item' => __( 'Add New Tag' ),
     'new_item_name' => __( 'New Tag Name' ),
@@ -263,7 +265,7 @@ function svc_create_post_type() {
     'add_or_remove_items' => __( 'Add or remove tags' ),
     'choose_from_most_used' => __( 'Choose from the most used tags' ),
     'menu_name' => __( 'Tags' ),
-  ); 
+  );
 
 
   register_taxonomy(
@@ -287,16 +289,16 @@ add_action ("manage_posts_custom_column", "svc_intersection_custom_columns");
 
 function svc_intersection_edit_columns($columns) {
     $extracolumns = array_merge($columns,
-				array("svc_col_order" => "Order"));
+                                array("svc_col_order" => "Order"));
     return $extracolumns;
 }
 add_filter ("manage_edit-svc_intersection_columns", "svc_intersection_edit_columns");
 
-add_filter( 'manage_edit-svc_intersection_sortable_columns', 'svc_intersection_sortable_column' );  
-function svc_intersection_sortable_column( $columns ) {  
-    $columns['svc_col_order'] = 'menu_order';  
-    return $columns;  
-}  
+add_filter( 'manage_edit-svc_intersection_sortable_columns', 'svc_intersection_sortable_column' );
+function svc_intersection_sortable_column( $columns ) {
+    $columns['svc_col_order'] = 'menu_order';
+    return $columns;
+}
 
 
 /* Define the custom box */
@@ -307,19 +309,19 @@ add_action( 'save_post', 'svc_save_postdata' );
 
 /* Adds a box to the main column on the Post and Page edit screens */
 function svc_add_custom_box() {
-    add_meta_box( 
+    add_meta_box(
         'svc_location',
         __( 'Location', 'svc_textdomain' ),
         'svc_inner_custom_box',
         'svc_intersection',
-	'side'
+        'side'
     );
-/*    add_meta_box( 
+/*    add_meta_box(
         'svc_street_map',
         __( 'Street Map', 'svc_textdomain' ),
         'svc_inner_custom_box_sm',
         'svc_intersection',
-	'side'
+        'side'
     );
 */
 }
@@ -369,9 +371,9 @@ function svc_inner_custom_box_sm( $post ) {
 
 /* When the post is saved, saves our custom data */
 function svc_save_postdata( $post_id ) {
-  // verify if this is an auto save routine. 
+  // verify if this is an auto save routine.
   // If it is our form has not been submitted, so we dont want to do anything
-  if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) 
+  if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE )
       return;
 
   // verify this came from the our screen and with proper authorization,
@@ -380,7 +382,7 @@ function svc_save_postdata( $post_id ) {
   if ( !wp_verify_nonce( $_POST['svc_noncename'], plugin_basename( __FILE__ ) ) )
       return;
 
-  
+
   // Check permissions
   if ( !current_user_can( 'edit_post', $post_id ) )
         return;
