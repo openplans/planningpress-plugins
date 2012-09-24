@@ -14,16 +14,24 @@ Allows people to display GeoJSON feeds on a map.
 
 GeoJSON Maps facilitates displaying multiple GeoJSON feeds on a map.  It has a custom legend to toggle on/off each data layer.  The map can be displayed on a Wordpress post or page via a short code.  All you need is some [GeoJSON](http://geojson.org/) feeds (both json and jsonp) and some styling markup.  See [here](http://demo.planningpress.org/map/) for a demo.  
 
-GeoJSON Maps uses [Argo](https://github.com/openplans/argo).  Its configuration is provided [here](https://github.com/openplans/argo/wiki/Configuration-Guide).  Take note of the "rules" and "popupContent" items to be entered when setting up a layer.  So, in the Street Vendors layer from the [demo](http://demo.planningpress.org/map/), "Layer Rules" is set to:
+GeoJSON Maps uses [Argo](https://github.com/openplans/argo).  Its configuration is provided [here](https://github.com/openplans/argo/wiki/Configuration-Guide).  Take note of the "rules" and "popupContent" items to be entered when setting up a layer.  So, in the Schools layer from the [demo](http://demo.planningpress.org/map/), "Layer Rules" is set to:
 
     [{
-      condition: 'true',
-      style: {color: '#444444', radius: 1, opacity: 0.9}
+      condition: '"{{LOCLEVEL}}" === "Elementary School"',
+      style: {color: 'green', radius: 3, opacity: 0.9, fillOpacity: 0.2}
+    },
+    {
+      condition: '"{{LOCLEVEL}}" === "Middle Secondary"',
+      style: {color: 'orange', radius: 3, opacity: 0.9, fillOpacity: 0.2}
+    },
+    {
+      condition: '"{{LOCLEVEL}}" === "High School"',
+      style: {color: 'red', radius: 3, opacity: 0.9, fillOpacity: 0.2}
     }]
 
-For the Crashes layer, "Popup Text" is set to: 
+And "Popup Text" is set to: 
 
-    {{ICOUNT}} crashes
+    {{LOCNAME}}
 
 
 == Installation ==
@@ -43,5 +51,5 @@ For the Crashes layer, "Popup Text" is set to:
 
 == Changelog ==
 
-= 0.1 (8/16/2012) =
+= 0.1 (8/29/2012) =
 * initial release
