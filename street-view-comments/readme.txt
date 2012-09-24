@@ -4,7 +4,7 @@ Donate link: http://openplans.org/donate/
 Tags: comments, street view, maps, gis
 Requires at least: 2.8
 Tested up to: 3.4.1
-Stable tag: 0.2
+Stable tag: 0.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -35,6 +35,9 @@ Street View Comments uses [Fitzgerald](https://github.com/openplans/fitzgerald).
 4. Moderate comments.
 
 == Changelog ==
+
+= 0.3 (9/24/2012) =
+* enqueues jQuery script in case theme doesn't already do this
 
 = 0.2 (8/27/2012) =
 * multiple concurrent street view displays can be run in a single Wordpress Site
