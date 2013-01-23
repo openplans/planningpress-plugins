@@ -46,13 +46,12 @@ function svc_intersections(){
   global $post;
   header( "Content-Type: application/json" );
   $query_args = array(
-            'post_type' => 'svc_intersection',
-	    'posts_per_page' => -1,
-	    'orderby' => 'menu_order',
-	    'order' => 'asc'
-	    );
-  if ($_GET['tag'])
-    $query_args['svc_intersection_tags'] = $_GET['tag'];
+    'post_type' => 'svc_intersection',
+    'svc_intersection_tags' => (isset($_GET['tag'])) ? $_GET['tag'] : null,
+    'posts_per_page' => -1,
+    'orderby' => 'menu_order',
+    'order' => 'asc'
+  );
   query_posts($query_args);
   $i = array();
   if ( have_posts() ) : while ( have_posts() ) : the_post();
